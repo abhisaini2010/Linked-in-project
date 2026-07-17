@@ -27,10 +27,13 @@ try {
 
     let profileImage ;
     let coverImage ;
+    console.log("req.files:", req.files);
     if(req.files.profileImage){
+         console.log("Profile Path:", req.files.profileImage[0].path);
     profileImage = await uploadOnCloudinary(req.files.profileImage[0].path)
     }
     if(req.files.coverImage){
+         console.log("Cover Path:", req.files.coverImage[0].path);
     coverImage = await uploadOnCloudinary(req.files.coverImage[0].path)
     }
 
