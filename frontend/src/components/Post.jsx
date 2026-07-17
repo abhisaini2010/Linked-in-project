@@ -12,7 +12,7 @@ import { IoSendSharp } from "react-icons/io5";
 import { io } from "socket.io-client"
 import ConnectionButton from './ConnectionButton';
 
-let socket = io("http://localhost:8000") //now connection has been established between frontend and backend
+let socket = io("https://linkedin-backend-llme.onrender.com") //now connection has been established between frontend and backend
 moment.updateLocale('en', {
   relativeTime: {
     future: "in %s",
